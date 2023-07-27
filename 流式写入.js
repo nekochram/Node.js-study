@@ -1,0 +1,7 @@
+const fs=require('fs')
+const ws=fs.createWriteStream('./观书有感.txt')
+ws.write('第一句\r\n')
+ws.write('第二句\r\n')
+ws.write('第三句\r\n')
+ws.write('第四句\r\n')
+ws.close()

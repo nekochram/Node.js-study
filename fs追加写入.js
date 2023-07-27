@@ -1,0 +1,19 @@
+const fs=require('fs')
+//异步写入
+fs.appendFile('./座右铭.txt','\r\n择其善者而从之',err=>{
+    if(err){
+        console.log('写入失败')
+    }else{
+        console.log('写入成功')
+    }
+})
+//异步写入
+fs.appendFileSync('./座右铭.txt','\r\n择其善者而从之')
+//writeFile实现追加写入
+fs.writeFile('./座右铭.txt','\r\n择其善者而从之',{flag:'a'},err=>{
+    if(err){
+        console.log('写入失败')
+    }else{
+        console.log('写入成功')
+    }
+})
