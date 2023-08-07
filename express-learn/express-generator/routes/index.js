@@ -1,5 +1,5 @@
 var express = require('express');
-const formidable = require('formidable');
+const {formidable} = require('formidable');
 var router = express.Router();
 
 /* GET home page. */
@@ -12,7 +12,7 @@ router.get('/portrait', function(req, res, next) {
 });
 
 router.post('/portrait', function(req, res, next) {
-    const form = formidable.formidable({
+    const form = formidable({
         multiples:true,
         uploadDir:__dirname + '/../public/images',
         keepExtensions:true
@@ -24,7 +24,6 @@ router.post('/portrait', function(req, res, next) {
       next(err);
       return;
     }
-    console.log(files)
     url=`/images/${files.avatar[0].newFilename}`
     res.end(url);
   });

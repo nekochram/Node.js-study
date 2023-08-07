@@ -1,0 +1,20 @@
+{
+  "account": [
+    {
+      "id": "8S5xB9tN8",
+      "title": "买鼠标",
+      "time": "2023-08-18",
+      "type": "-1",
+      "account": "1112",
+      "remarks": "就想买"
+    },
+    {
+      "id": "-J7ezB_H4",
+      "title": "发工资",
+      "time": "2023-08-12",
+      "type": "1",
+      "account": "1232313",
+      "remarks": "666"
+    }
+  ]
+}
