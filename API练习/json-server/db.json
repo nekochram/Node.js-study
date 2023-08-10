@@ -1,0 +1,26 @@
+{
+  "song": [
+    {
+      "id": 1, 
+      "name": "干杯",
+      "singer": "五月天"
+    },
+    {
+      "id": 2,
+      "name": "当",
+      "singer": "动力火车"
+    },
+    {
+      "id": 3,
+      "name": "不能说的秘密",
+      "singer": "Jay"
+    },
+    {
+      "name": "双节棍",
+      "singer": "Jay",
+      "id": 4
+    }
+  ],
+  "user": [],
+  "_command_":["json-server --watch db.json"]
+}
